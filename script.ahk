@@ -93,7 +93,7 @@ ICE(Enable)
 return
 
 
-$F1::
+$NumpadEnter::
 Enable:=!Enable  
 ICE(Enable)
 Return 
@@ -115,6 +115,10 @@ SetTimer, Labelspace, Off
 }
 Else 
 {
+Gosub, Labele
+Gosub, Labelr
+Gosub, Labelw
+Gosub, Labelspace
 SetTimer, Labele, 500
 SetTimer, Labelr, 1000
 SetTimer, Labelw, 60
